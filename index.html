@@ -5,10 +5,10 @@
 		<link href="paralaxa.css" rel='stylesheet' type='text/css'>
 		<link href="style.css" rel='stylesheet' type='text/css'>
 		<link href='http://fonts.googleapis.com/css?family=Lato:400' rel='stylesheet' type='text/css'>
-		<script type="text/javascript" src="ukladSloneczny/skrypt.js"></script>
+		
 
-		<link href="ukladSloneczny/planety.css" rel='stylesheet' type='text/css'>
-
+		<link rel="stylesheet" type="text/css" href="ligthbox/style.css">
+		
 
 	</head>
 	<body>
@@ -51,29 +51,150 @@
 
 		</div>
 		<div class=lorem></div>
-		<div class=content2>
-			<h1>Galeria zdjęć</h1>
-				<img src="grafika/dss35c.jpg">
-				<img src="grafika/icps_ws.jpg">
-				<img src="grafika/1.jpg">
-				<img src="grafika/2.jpg">
-				<img src="grafika/3.jpg">
-				<img src="grafika/pia21260.jpg">
-				<img src="grafika/pia21486.jpg">
-			<details>
-				<summary>pokaż więcej</summary>
-				<p><img src="grafika/potw1710a.jpg" width=200px; height="200px;"></p>
-				<details>
-					<summary>więcej !</summary>
-					<img src="grafika/potw1710a.jpg" width=200px; height="200px;">
-				</details>
+		<div class=content1>
+			<div class="row">
 
-			</details>
-			
-			
-		</div>
+			  <div class="column">
+			    <img src="grafika/1.jpg" onclick="openModal();currentSlide(1)" class="hover-shadow">
+			  </div>
+			  <div class="column">
+			    <img src="grafika/2.jpg" onclick="openModal();currentSlide(2)" class="hover-shadow">
+			  </div>
+			  <div class="column">
+			    <img src="grafika/3.jpg" onclick="openModal();currentSlide(3)" class="hover-shadow">
+			  </div>
+			  <div class="column">
+			    <img src="grafika/dss35c.jpg" onclick="openModal();currentSlide(4)" class="hover-shadow">
+			  </div>
+			  <div class="column">
+			    <img src="grafika/pia21260.jpg" onclick="openModal();currentSlide(5)" class="hover-shadow"></div>
+			    <div class="column">
+			    <img src="grafika/pia21486.jpg" onclick="openModal();currentSlide(6)" class="hover-shadow"></div>
+			    <div class="column">
+			    <img src="grafika/icps_ws.jpg" onclick="openModal();currentSlide(7)" class="hover-shadow">
+			  </div>
+			  </div>
+			  <details>
+			<summary>pokaż więcej</summary>
+				
+			  </details>
+</div><!--row-->
 
+<div id="myModal" class="modal">
+  <span class="close cursor" onclick="closeModal()">&times;</span>
+  <div class="modal-content">
 
+    <div class="mySlides">
+      <div class="numbertext">1 / 20</div>
+        <img src="grafika/1.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">2 / 20</div>
+        <img src="grafika/2.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">3 / 20</div>
+        <img src="grafika/3.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">4 / 20</div>
+        <img src="grafika/dss35c.jpg" style="width:100%">
+    </div>
+    <div class="mySlides">
+      <div class="numbertext">5 / 20</div>
+        <img src="grafika/pia21260.jpg" style="width:100%">
+    </div>
+    <div class="mySlides">
+      <div class="numbertext">6 / 20</div>
+        <img src="grafika/pia21486.jpg" style="width:100%">
+    </div>
+    <div class="mySlides">
+      <div class="numbertext">7 / 20</div>
+        <img src="grafika/icps_ws.jpg" style="width:100%">
+    </div>
+    <div class="mySlides">
+      <div class="numbertext">8 / 20</div>
+        <img src="grafika/pia21554.jpg" style="width:100%">
+    </div>
+
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    <div class="caption-container">
+      <p id="caption"></p>
+    </div>
+
+    <div class="column">
+      <img class="demo" src="grafika/1.jpg" onclick="currentSlide(1)" alt="Nature">
+    </div>
+
+    <div class="column">
+      <img class="demo" src="grafika/2.jpg" onclick="currentSlide(2)" alt="Trolltunga">
+    </div>
+
+    <div class="column">
+      <img class="demo" src="grafika/3.jpg" onclick="currentSlide(3)" alt="Mountains">
+    </div>
+	<div class="column">
+      <img class="demo" src="grafika/dss35c.jpg" onclick="currentSlide(4)" alt="1">
+    </div>
+    <div class="column">
+      <img class="demo" src="grafika/pia21260.jpg" onclick="currentSlide(5)" alt="2">
+    </div>
+    <div class="column">
+      <img class="demo" src="grafika/pia21486.jpg" onclick="currentSlide(6)" alt="3">
+    </div>
+    <div class="column">
+      <img class="demo" src="grafika/icps_ws.jpg" onclick="currentSlide(7)" alt="4">
+    </div>
+    <div class="column">
+      <img class="demo" src="grafika/pia21554.jpg" onclick="currentSlide(8)" alt="5">
+    </div>
+    
+  </div><!--model-->
+</div><!--Ligthbox-->
+
+		<script>
+function openModal() {
+  document.getElementById('myModal').style.display = "block";
+}
+
+function closeModal() {
+  document.getElementById('myModal').style.display = "none";
+}
+
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script>
 	</div><!--Parallaxa-->
 	
 
