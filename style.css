@@ -4,10 +4,16 @@ body{
   background-size: cover;
   height: 100%;
   margin:-10px;
+  border:red 3px solid ;
 }
 nav{height:10vh; width: 100%; background-color: #000 ; color :#ddd; position:fixed; z-index:100; text-align: center;}
-footer{height:20vh; width:100vw; background-color: blue ; color :#ddd;}
+
 .lorem{height:40vh;width:100vw;}
+.lorem p{font-size:30px; font-weight: 700; color:#fef;}
+.loremzapychacz{height:90%;}
+.lorem span{ display: block; height:2px; }
+
+
 
 nav ol {padding: 0;margin: 0;list-style-type: none;font-size: 20px;font-family: 'Amatic SC', cursive; display: inline-block;margin-top:3vh;}
 nav ol a{color: #ffffff;text-decoration:none;display:block;}
@@ -22,11 +28,21 @@ nav ol > li:hover{font-size: 23px;background-color:#AB092E;border-radius: 50px;}
 .content2 {height:auto;background:linear-gradient(45deg,#000,#363640);padding-top: 20px;padding-bottom:80px;}
 .content2 p{font-size:30px; font-weight: 700; color:#fef;}
 .content2 img{ width:200px; height:200px; padding:5px; }
-
+.content3{height:auto;background:linear-gradient(45deg,#000,#363640);padding-top: 20px;padding-bottom:80px;}
+.content3 h1{font-size:60px; text-align: center; color:#EBF2F5;}
+.content3 p{font-size:30px; font-weight: 700; color:#fef;margin:0px 100px 20px 80px; text-align: justify;}
+.content4{height:auto;background:linear-gradient(45deg,#000,#363640);padding-top: 20px;padding-bottom:80px;}
+.content4 p{font-size:30px; font-weight: 700; color:#fef;margin:20px 20px 20px 40px; text-align: justify;}
+.content5{height:auto;text-align: center;}
+.content5 h1{font-size:60px;  color:#EBF2F5;}
+.content5 iframe{ margin:0 10px 0 10px; }
+footer{height:80px; background-color: black ; color :#ddd;}
+#footerinside{margin:5px;}
+#footerinside p{text-align: center ;}
 .kolumna {
-    -webkit-column-count: 3; /* Chrome, Safari, Opera */
-    -moz-column-count: 3; /* Firefox */
-    column-count: 3;
+    -webkit-column-count: 2; /* Chrome, Safari, Opera */
+    -moz-column-count: 2; /* Firefox */
+    column-count: 2;
 }
 
 .c{display: inline-block; margin-left: 20vw;margin-right: 20vw;margin-top: 100px;}/*styl czasoprzestrzeni energii i praw fizyki*/

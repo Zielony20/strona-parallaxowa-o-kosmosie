@@ -5,13 +5,121 @@
 		<link href="style.css" rel='stylesheet' type='text/css'>
 		<link href="tytul.css" rel='stylesheet' type='text/css'>
 		<link href="paralaxa.css" rel='stylesheet' type='text/css'>
-		
+		<link rel="stylesheet" type="text/css" href="planety.css">
 		<link href='http://fonts.googleapis.com/css?family=Lato:400' rel='stylesheet' type='text/css'>
 		
-
+		
 		<link rel="stylesheet" type="text/css" href="ligthbox/style.css">
 		
+		<script type="text/javascript" src="jquery-3.1.1.min.js"></script>
+		<script>
+$(document).ready(function(){
 
+				$('a[href^="#"]').on('click', function(event) {
+	
+		var target = $( $(this).attr('href') );
+	
+		if( target.length ) {
+			event.preventDefault();
+			$('html, body').animate({
+				scrollTop: target.offset().top
+			}, 1000);
+		}
+	});
+
+
+
+				$('#neptun').click(function(){
+					$('#merkuryinfo').hide();
+					$('#saturninfo').hide();
+					$('#wenusinfo').hide();
+					$('#marsinfo').hide();
+					$('#jowiszinfo').hide();
+					$('#uraninfo').hide();
+					$('#ziemiainfo').hide();
+					$('#neptuninfo').fadeIn();
+				});
+
+				$('#uran').click(function(){
+					$('#merkuryinfo').hide();
+					$('#saturninfo').hide();
+					$('#wenusinfo').hide();
+					$('#marsinfo').hide();
+					$('#jowiszinfo').hide();
+					$('#neptuninfo').hide();
+					$('#ziemiainfo').hide();
+					$('#uraninfo').fadeIn();
+				});
+
+				$('#saturn').click(function(){
+					$('#merkuryinfo').hide();
+					$('#jowiszinfo').hide();
+					$('#wenusinfo').hide();
+					$('#marsinfo').hide();
+					$('#uraninfo').hide();
+					$('#neptuninfo').hide();
+					$('#ziemiainfo').hide();
+					$('#saturninfo').fadeIn();
+				});
+
+				$('#jowisz').click(function(){
+					$('#merkuryinfo').hide();
+					$('#saturninfo').hide();
+					$('#wenusinfo').hide();
+					$('#marsinfo').hide();
+					$('#uraninfo').hide();
+					$('#neptuninfo').hide();
+					$('#ziemiainfo').hide();
+					$('#jowiszinfo').fadeIn();
+				});
+				$('#mars').click(function(){
+					$('#merkuryinfo').hide();
+					$('#saturninfo').hide();
+					$('#wenusinfo').hide();
+					$('#uraninfo').hide();
+					$('#jowiszinfo').hide();
+					$('#neptuninfo').hide();
+					$('#ziemiainfo').hide();
+					$('#marsinfo').fadeIn();
+				});
+				$('#ziemia').click(function(){
+					$('#merkuryinfo').hide();
+					$('#jowiszinfo').hide();
+					$('#saturninfo').hide();
+					$('#wenusinfo').hide();
+					$('#marsinfo').hide();
+					$('#uraninfo').hide();
+					$('#neptuninfo').hide();
+					$('#ziemiainfo').fadeIn();
+				});
+				$('#wenus').click(function(){
+					$('#merkuryinfo').hide();
+					$('#saturninfo').hide();
+					$('#uraninfo').hide();
+					$('#marsinfo').hide();
+					$('#jowiszinfo').hide();
+					$('#neptuninfo').hide();
+					$('#ziemiainfo').hide();
+					$('#wenusinfo').fadeIn();
+				});
+				$('#merkury').click(function(){
+					$('#uraninfo').hide();
+					$('#saturninfo').hide();
+					$('#wenusinfo').hide();
+					$('#marsinfo').hide();
+					$('#jowiszinfo').hide();
+					$('#neptuninfo').hide();
+					$('#ziemiainfo').hide();
+					$('#merkuryinfo').fadeIn();
+				});
+
+
+
+			});
+</script>
+		<script src="planety.js">
+			
+			</script>
 	</head>
 	<body TOPMARGIN="0" MARGINWIDTH="0" MARGINHEIGHT="0" MARGINBORDER="0">
 	
@@ -19,19 +127,20 @@
 
 	<nav>
 		<ol>
-			<li><a href=#>Strona główna</a></li>
-			<li><a href=#>Misje</a></li>
-			<li><a href=#>Układ słoneczny</a></li>
-			<li><a href=#>Podróż na marsa</a></li>
-			<li><a href=#>Galeria</a></li>
+			<li><a href=#top>Strona główna</a></li>
+			<li><a href=#uklad>Układ Słoneczny</a></li>
+			<li><a href=#galeria>Galeria</a></li>
+			<li><a href=#filmy>Wykłady</a></li>
+
 		</ol>
 
 
 	</nav>
 	<div class=parallax>
+	
 	<div id=kosmos_wraper>
 		
-  <div id=kosmos>
+  <div id=kosmos id=top>
     <span>K</span>
     <span>O</span>
     <span>S</span>
@@ -57,12 +166,183 @@
 			<p style="text-align: center;">Według naszego obecnego rozumienia Wszechświat składa się z trzech części składowych: </p>
 			<p style="text-align: center;"><span class=c>czasoprzestrzeni</span> <span class=c>form energii</span>  <span class=c>praw fizyki </span></p>
 		</div>
-		<div class=lorem></div>
-		<div class=content1></div>
-		<div class=lorem></div>
-		<div class=content1></div>
-		<div class=lorem></div>
-		<div class=content1>
+		<div class=lorem>
+			
+		</div>
+		<div class=content3>
+
+		<p>Prawa fizyki, wedle współczesnej wiedzy, nie zmieniały się od początku istnienia Wszechświata.</p>
+
+				<p>Zgodnie z obowiązującym obecnie Modelem Standardowym cała materia składa się z trzech generacji kwarków i leptonów, oddziałujących poprzez cztery siły podstawowe: elektromagnetyzm (przenoszony przez fotony), oddziaływanie słabe (przenoszone przez bozony W i Z), oddziaływanie silne (przenoszone przez gluony) oraz grawitację (której mechanizm przenoszenia jest nieznany). Nie istnieje obecnie żadna teoria wyjaśniająca wartości podstawowych stałych fizycznych, takich jak stała Plancka czy stała grawitacji. Zidentyfikowano kilka praw zachowania, którym podlegają wszystkie procesy we Wszechświecie, np. zasada zachowania energii czy zasada zachowania ładunku elektrycznego. W większości te prawa są konsekwencjami symetrii praw fizyki.</p>
+
+				<p>Spośród czterech oddziaływań podstawowych grawitacja jest dominującą siłą w kosmologicznych skalach długości; oznacza to, że trzy pozostałe siły w strukturach na poziomie galaktyk oraz wielkoskalowych struktur nie odgrywają istotnej roli. Oddziaływania grawitacyjne są kumulacyjne; w przeciwieństwie do oddziaływań ładunków naładowanych dodatnio i ujemnie, które znosza się wzajemnie, przez co oddziaływanie elektromagnetyczne staje się mało istotne w kosmologicznych skalach długości. Pozostałe dwa oddziaływania, silne i słabe, zmniejszają się wraz z przebytą odległością; ograniczają się one jedynie do subatomowych skal długości.</p>
+				</div>
+				<div class="content4">
+					<img src="grafika/kos1.png" width="1000px" height="600px" style="float:right;margin-top: -60px">
+
+				<p>Częstość występowania pierwiastków we Wszechświecie jest prawie identyczna z tą, jaka była w momencie jego powstania (szczególnie dotyczy to pierwiastków lekkich). To oznacza, że procesy tworzenia pierwiastków w gwiazdach i supernowych tylko nieznacznie zmieniły skład chemiczny Wszechświata.</p>
+
+				<p>Wszechświat zawiera wielokrotnie więcej materii niż antymaterii. Ta asymetria jest prawdopodobnie związana z łamaniem symetrii CP.</p>
+
+				<p>Wszechświat wydaje się nie mieć sumarycznego ładunku elektrycznego ani momentu pędu, zatem grawitacja wydaje się być dominującym oddziaływaniem w kosmologicznych skalach długości. Ich wystąpienie oznaczałoby złamanie odpowiednio prawa Gaussa i zasady zachowania momentu pędu, jeśli Wszechświat jest skończony.</p>
+
+				</div>
+		
+		<div class=lorem id=uklad></div>
+
+		<div class="planety-wrapper">
+			<div class="planety">
+				<img src="grafika/merkury.png" width="200px" height="200px" id="merkury">
+				<img src="grafika/wenus.png" width="200px" height="200px" id="wenus">
+				<img src="grafika/ziemia.png" width="200px" height="200px" id="ziemia">
+				<img src="grafika/mars.png" width="200px" height="200px" id="mars">
+				<img src="grafika/jowisz.png" width="200px" height="200px" id="jowisz">
+				<img src="grafika/saturn.png" width="300px" height="200px" id="saturn">
+				<img src="grafika/uran.png" width="200px" height="200px" id="uran">
+				<img src="grafika/neptun.png" width="200px" height="200px" id="neptun">
+				
+				</div>
+			
+				<div id="infoplanety">
+				<div id="jowiszinfo">
+						<div class="pln">
+						<p>Odległość od Słońca w mln km: 778,3</p>
+						<p>Okres obiegu wokół Słońca: 11 lat 315 dni</p>
+						<p>Okres rotacji: 9,8 godzin</p>
+						<p>Średnica (km): 142800</p>
+						<p>Masa (Ziemia = 1): 317,9</p>
+						</div><div class="pln">
+						<p>Objętość (Ziemia = 1): 1316</p>
+						<p>Gęstość (g/cm³): 1,32</p>
+						<p>Prędkość ruchu po orbicie (km/s): 13,1</p>
+						<p>Liczba znanych księżyców: 63</p>
+						<p> </p>
+						</div>
+				</div>
+				<div id="saturninfo">
+					<div class="pln">
+					<p>Odległość od Słońca w mln km: 1427</p>
+					<p>Okres obiegu wokół Słońca: 29 lat 167 dni</p>
+					<p>Okres rotacji: 10 h 14 min</p>
+					<p>Średnica (km): 120660</p>
+					<p>Masa (Ziemia = 1): 95,1</p>
+					</div><div class="pln">
+					<p>Objętość (Ziemia = 1): 755</p>
+					<p>Gęstość (g/cm³): 0,7</p>
+					<p>Prędkość ruchu po orbicie (km/s): 9,6</p>
+					<p>Liczba znanych księżyców: 60</p>
+					<p> </p>
+					</div>
+				</div>
+				<div id="merkuryinfo">
+					<div class="pln">
+					<p>Odległość od Słońca w mln km: 59,9</p>
+					<p>Okres obiegu wokół Słońca: 87,969 dnia</p>
+					<p>Okres rotacji: 58,65 dni</p>
+					<p>Średnica (km): 4878</p>
+					<p>Masa (Ziemia = 1): 0,056</p>
+					</div><div class="pln">
+					<p>Objętość (Ziemia = 1): 0,05</p>
+					<p>Gęstość (g/cm³): 5,43</p>
+					<p>Prędkość ruchu po orbicie (km/s): 47,4</p>
+					<p>Liczba znanych księżyców: 0</p>
+					<p> </p>
+				</div>					
+				</div>
+
+				<div id="wenusinfo">
+					<div class="pln">
+					<p>Odległość od Słońca w mln km: 108,2</p>
+					<p>Okres obiegu wokół Słońca: 224,7 doby</p>
+					<p>Okres rotacji: 243 doby</p>
+					<p>Średnica (km): 12104</p>
+					<p>Masa (Ziemia = 1): 0,815</p>
+					</div><div class="pln">
+					<p>Objętość (Ziemia = 1): 0,88</p>
+					<p>Gęstość (g/cm³): 5,24</p>
+					<p>Prędkość ruchu po orbicie (km/s): 35,0</p>
+					<p>Liczba znanych księżyców: 0</p>
+					<p> </p>
+				</div>					</div>
+				<div id="marsinfo">
+					<div class="pln">
+					
+					<p>Odległość od Słońca w mln km: 227,9</p>
+					<p>Okres obiegu wokół Słońca: 686,738 dnia</p>
+					<p>Okres rotacji: 24 h 37 min</p>
+					<p>Średnica (km): 6788</p>
+					<p>Masa (Ziemia = 1): 0,107</p>
+					</div><div class="pln">
+					<p>Objętość (Ziemia = 1): 0,15</p>
+					<p>Gęstość (g/cm³): 3,04</p>
+					<p>Prędkość ruchu po orbicie (km/s): 24,1</p>
+					<p>Liczba znanych księżyców: 2</p>
+					<p> </p>					
+					</div>
+
+
+				</div>
+				<div id="uraninfo">
+					<div class="pln">
+					<p>Odległość od Słońca w mln km: 2870</p>
+					<p>Okres obiegu wokół Słońca: 84,014 lat</p>
+					<p>Okres rotacji: 10 h 49 min</p>
+					<p>Średnica (km): 51108</p>
+					<p>Masa (Ziemia = 1): 14,5</p>
+					</div><div class="pln">
+					<p>Objętość (Ziemia = 1): 52</p>
+					<p>Gęstość (g/cm³): 1,27</p>
+					<p>Prędkość ruchu po orbicie (km/s): 6,8</p>
+					<p>Liczba znanych księżyców: 27</p>
+					<p> </p>
+					</div>
+				</div>
+				<div id="neptuninfo">
+					<div class="pln">
+					<p>Odległość od Słońca w mln km: 4497</p>
+					<p>Okres obiegu wokół Słońca: 164,78 lat</p>
+					<p>Okres rotacji: 15 h 40 min</p>
+					<p>Średnica (km): 49530</p>
+					<p>Masa (Ziemia = 1): 17,2</p>
+					</div><div class="pln">
+					<p>Objętość (Ziemia = 1): 44</p>
+					<p>Gęstość (g/cm³): 1,77</p>
+					<p>Prędkość ruchu po orbicie (km/s): 5,4</p>
+					<p>Liczba znanych księżyców: 13</p>
+					<p> </p>
+					</div>
+				</div>
+				<div id="ziemiainfo">
+					<div class="pln">
+					<p>Odległość od Słońca w mln km: 149,6</p>
+					<p>Okres obiegu wokół Słońca: 365 dni 6h</p>
+					<p>Okres rotacji: 23 h 56 min</p>
+					<p>Średnica (km): 12752</p>
+					<p>Masa (Ziemia = 1): 1,000<p>
+					</div><div class="pln">
+					<p>Objętość (Ziemia = 1): 1,00</p>
+					<p>Gęstość (g/cm³): 5,52</p>
+					<p>Prędkość ruchu po orbicie (km/s): 29,8</p>
+					<p>Liczba znanych księżyców: 1</p>
+					<p> </p>
+					</div>
+				</div>
+				</div>
+				
+
+			</div><!--wraper planety-->
+
+			
+		
+		<div style="clear:both;">
+
+			<div class=lorem>
+			</div>
+		<div class=lorem >
+			<div class=loremzapychacz></div>
+			<span id=galeria></span>
+		</div>
+		<div class=content1 >
 			
 			<div class="row">
 				<h1>Galeria Zdjęć</h1>
@@ -83,11 +363,60 @@
 			    <div class="column">
 			    <img src="grafika/pia21486.jpg" onclick="openModal();currentSlide(6)" class="hover-shadow"></div>
 			    <div class="column">
-			    <img src="grafika/icps_ws.jpg" onclick="openModal();currentSlide(7)" class="hover-shadow">
+			    <img src="grafika/icps_ws.jpg" onclick="openModal();currentSlide(7)" class="hover-shadow"></div>
+
+			     <div class="column">
+			    <img src="grafika/pia21554.jpg" onclick="openModal();currentSlide(8)" class="hover-shadow"></div>
+			    <div class="column">
+			    <img src="grafika/1a.jpg" onclick="openModal();currentSlide(9)" class="hover-shadow">
 			  </div>
+			  <div class="column">
+			    <img src="grafika/2a.jpg" onclick="openModal();currentSlide(10)" class="hover-shadow">
+			  </div>
+			  <div class="column">
+			    <img src="grafika/3a.jpg" onclick="openModal();currentSlide(11)" class="hover-shadow">
+			  </div>
+			  <div class="column">
+			    <img src="grafika/4a.jpg" onclick="openModal();currentSlide(12)" class="hover-shadow">
+			  </div>
+			  <div class="column">
+			    <img src="grafika/5a.png" onclick="openModal();currentSlide(13)" class="hover-shadow">
+			  </div>
+			  <div class="column">
+			    <img src="grafika/6a.jpg" onclick="openModal();currentSlide(14)" class="hover-shadow">
+			  </div>
+			  <div class="column">
+			    <img src="grafika/7a.jpg" onclick="openModal();currentSlide(15)" class="hover-shadow">
+			  </div>
+			  <div class="column">
+			    <img src="grafika/a8.jpg" onclick="openModal();currentSlide(16)" class="hover-shadow">
+			  </div>
+			  
+
+
 			  <details>
 			<summary>pokaż więcej</summary>
-				
+				<div class="column">
+			    <img src="grafika/a9.jpg" onclick="openModal();currentSlide(17)" class="hover-shadow">
+			  </div>
+			  <div class="column">
+			    <img src="grafika/a10.jpg" onclick="openModal();currentSlide(18)" class="hover-shadow">
+			  </div>
+				<div class="column">
+			    <img src="grafika/a11.jpg" onclick="openModal();currentSlide(19)" class="hover-shadow">
+			  </div>
+			  <div class="column">
+			    <img src="grafika/a12.jpg" onclick="openModal();currentSlide(20)" class="hover-shadow">
+			  </div>
+			  <div class="column">
+			    <img src="grafika/a13.jpg" onclick="openModal();currentSlide(21)" class="hover-shadow">
+			  </div>
+			  <div class="column">
+			    <img src="grafika/a14.jpg" onclick="openModal();currentSlide(22)" class="hover-shadow">
+			  </div>
+			  <div class="column">
+			    <img src="grafika/a15.jpg" onclick="openModal();currentSlide(23)" class="hover-shadow">
+			  </div>
 			  </details>
 			  </div><!--row-->
 			  
@@ -132,6 +461,67 @@
       <div class="numbertext">8 / 20</div>
         <img src="grafika/pia21554.jpg" style="width:100%">
     </div>
+    <div class="mySlides">
+      <div class="numbertext">9 / 20</div>
+        <img src="grafika/1a.jpg" style="width:100%">
+    </div>
+    <div class="mySlides">
+      <div class="numbertext">10 / 20</div>
+        <img src="grafika/2a.jpg" style="width:100%">
+    </div>
+    <div class="mySlides">
+      <div class="numbertext">11 / 20</div>
+        <img src="grafika/3a.jpg" style="width:100%">
+    </div>
+    <div class="mySlides">
+      <div class="numbertext">12 / 20</div>
+        <img src="grafika/4a.jpg" style="width:100%">
+    </div>
+    <div class="mySlides">
+      <div class="numbertext">13 / 20</div>
+        <img src="grafika/5a.png" style="width:100%">
+    </div>
+    <div class="mySlides">
+      <div class="numbertext">14 / 20</div>
+        <img src="grafika/6a.jpg" style="width:100%">
+    </div>
+    <div class="mySlides">
+      <div class="numbertext">15 / 20</div>
+        <img src="grafika/7a.jpg" style="width:100%">
+    </div>
+    <div class="mySlides">
+      <div class="numbertext">16 / 20</div>
+        <img src="grafika/a8.jpg" style="width:100%">
+    </div>
+    <div class="mySlides">
+      <div class="numbertext">17 / 20</div>
+        <img src="grafika/a9.jpg" style="width:100%">
+    </div>
+    <div class="mySlides">
+      <div class="numbertext">18 / 20</div>
+        <img src="grafika/a10.jpg" style="width:100%">
+    </div>
+    <div class="mySlides">
+      <div class="numbertext">19 / 20</div>
+        <img src="grafika/a11.jpg" style="width:100%">
+    </div>
+    <div class="mySlides">
+      <div class="numbertext">20 / 20</div>
+        <img src="grafika/a12.jpg" style="width:100%">
+    </div>
+    <div class="mySlides">
+      <div class="numbertext">21 / 20</div>
+        <img src="grafika/a13.jpg" style="width:100%">
+    </div>
+    <div class="mySlides">
+      <div class="numbertext">22 / 20</div>
+        <img src="grafika/a14.jpg" style="width:100%">
+    </div>
+    <div class="mySlides">
+      <div class="numbertext">23 / 20</div>
+        <img src="grafika/a15.jpg" style="width:100%">
+    </div>
+
 
     <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
     <a class="next" onclick="plusSlides(1)">&#10095;</a>
@@ -141,30 +531,75 @@
     </div>
 
     <div class="column">
-      <img class="demo" src="grafika/1.jpg" onclick="currentSlide(1)" alt="Nature">
+      <img class="demo" src="grafika/1.jpg" onclick="currentSlide(1)" alt="R2D2">
     </div>
 
     <div class="column">
-      <img class="demo" src="grafika/2.jpg" onclick="currentSlide(2)" alt="Trolltunga">
+      <img class="demo" src="grafika/2.jpg" onclick="currentSlide(2)" alt="BB8">
     </div>
 
     <div class="column">
-      <img class="demo" src="grafika/3.jpg" onclick="currentSlide(3)" alt="Mountains">
+      <img class="demo" src="grafika/3.jpg" onclick="currentSlide(3)" alt="TK-421">
     </div>
 	<div class="column">
-      <img class="demo" src="grafika/dss35c.jpg" onclick="currentSlide(4)" alt="1">
+      <img class="demo" src="grafika/dss35c.jpg" onclick="currentSlide(4)" alt="Piwnice">
     </div>
     <div class="column">
-      <img class="demo" src="grafika/pia21260.jpg" onclick="currentSlide(5)" alt="2">
+      <img class="demo" src="grafika/pia21260.jpg" onclick="currentSlide(5)" alt="a to nie wiem ciemno">
     </div>
     <div class="column">
-      <img class="demo" src="grafika/pia21486.jpg" onclick="currentSlide(6)" alt="3">
+      <img class="demo" src="grafika/pia21486.jpg" onclick="currentSlide(6)" alt="R2">
     </div>
     <div class="column">
-      <img class="demo" src="grafika/icps_ws.jpg" onclick="currentSlide(7)" alt="4">
+      <img class="demo" src="grafika/icps_ws.jpg" onclick="currentSlide(7)" alt="Profesionalny robot minisumo">
     </div>
     <div class="column">
-      <img class="demo" src="grafika/pia21554.jpg" onclick="currentSlide(8)" alt="5">
+      <img class="demo" src="grafika/pia21554.jpg" onclick="currentSlide(8)" alt="teren skanowany">
+    </div>
+    <div class="column">
+      <img class="demo" src="grafika/1a.jpg" onclick="currentSlide(9)" alt="galaktyka13452352">
+    </div>
+    <div class="column">
+      <img class="demo" src="grafika/2a.jpg" onclick="currentSlide(10)" alt="nawet fajne">
+    </div>
+    <div class="column">
+      <img class="demo" src="grafika/3a.jpg" onclick="currentSlide(11)" alt="">
+    </div>
+    <div class="column">
+      <img class="demo" src="grafika/4a.jpg" onclick="currentSlide(12)" alt="">
+    </div>
+    <div class="column">
+      <img class="demo" src="grafika/5a.png" onclick="currentSlide(13)" alt="">
+    </div>
+    <div class="column">
+      <img class="demo" src="grafika/6a.jpg" onclick="currentSlide(14)" alt="">
+    </div>
+    <div class="column">
+      <img class="demo" src="grafika/7a.jpg" onclick="currentSlide(15)" alt="">
+    </div>
+    <div class="column">
+      <img class="demo" src="grafika/a8.jpg" onclick="currentSlide(16)" alt="">
+    </div>
+    <div class="column">
+      <img class="demo" src="grafika/a9.jpg" onclick="currentSlide(17)" alt="">
+    </div>
+    <div class="column">
+      <img class="demo" src="grafika/a10.jpg" onclick="currentSlide(18)" alt="">
+    </div>
+    <div class="column">
+      <img class="demo" src="grafika/a11.jpg" onclick="currentSlide(19)" alt="">
+    </div>
+    <div class="column">
+      <img class="demo" src="grafika/a12.jpg" onclick="currentSlide(20)" alt="">
+    </div>
+    <div class="column">
+      <img class="demo" src="grafika/a13.jpg" onclick="currentSlide(21)" alt="">
+    </div>
+    <div class="column">
+      <img class="demo" src="grafika/a14.jpg" onclick="currentSlide(22)" alt="">
+    </div>
+    <div class="column">
+      <img class="demo" src="grafika/a15.jpg" onclick="currentSlide(23)" alt="Krzyż">
     </div>
     
   </div><!--model-->
@@ -210,18 +645,29 @@ function showSlides(n) {
 }
 </script>
 	
+	
+	<div class="content5" id=filmy>
+		<h1>Ciekawe wykłady</h1>
+		<iframe width="560" height="315" src="https://www.youtube.com/embed/vTovI6hj1s4" frameborder="0" allowfullscreen></iframe>
+		<iframe width="560" height="315" src="https://www.youtube.com/embed/azHLkRvDhJs" frameborder="0" allowfullscreen></iframe>
+		<iframe width="560" height="315" src="https://www.youtube.com/embed/HEheh1BH34Q" frameborder="0" allowfullscreen></iframe>
+
+
+	</div>
+
 
 
 	</div><!--Parallaxa-->
 	
 
 
-	<!--
+	
 	<footer>
-		stopka
-
+	<div id="footerinside">
+		<p>Wykonał Piotr Sikora</p>
+	</div>
 	</footer>
-	-->
+	
 
 	
 

@@ -1,0 +1,48 @@
+.planety-wrapper{height:auto;margin: 40px;}
+.planety
+{
+	height:auto; 
+	text-align: center;
+}
+#merkury,#wenus,#ziemia,#mars,#jowisz, #saturn,#uran,#neptun{ display: inline-block;  }
+
+
+
+#merkuryinfo{
+	display:none;
+	text-align: center;
+}
+#wenusinfo{
+	display:none;
+	text-align: center;
+}
+#ziemiainfo{
+	display:none;
+	text-align: center;
+}
+#marsinfo{
+	display:none;
+	text-align: center;
+}
+#jowiszinfo{
+	display: none;
+	text-align: center;
+}
+#saturninfo{
+	display:none;
+	text-align: center;
+}
+#uraninfo{
+	display:none;
+	text-align: center;
+}
+#neptuninfo{
+	display:none;
+	text-align: center;
+}
+#jowiszinfo p,#saturninfo p,#ziemiainfo p,#merkuryinfo p,#wenusinfo p,#marsinfo p,#uraninfo p,#neptuninfo p{
+	font-size: 30px;
+	color:white;
+}
+
+.pln{display: inline-block;margin-left:10px;margin-right:10px;}
