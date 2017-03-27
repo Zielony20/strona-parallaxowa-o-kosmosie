@@ -3,8 +3,9 @@ body{
   padding:0px;
   background-size: cover;
   height: 100%;
+  margin:-10px;
 }
-nav{height:10vh; width:100vw; background-color: #000 ; color :#ddd; position:fixed; z-index:100; text-align: center;}
+nav{height:10vh; width: 100%; background-color: #000 ; color :#ddd; position:fixed; z-index:100; text-align: center;}
 footer{height:20vh; width:100vw; background-color: blue ; color :#ddd;}
 .lorem{height:40vh;width:100vw;}
 
@@ -14,11 +15,18 @@ nav ol a{color: #ffffff;text-decoration:none;display:block;}
 nav ol > li{ float: left;width:220px;margin-top:13px; }
 nav ol > li:hover{font-size: 23px;background-color:#AB092E;border-radius: 50px;}
 
-.content1{height:90vh;width:100vw;background:linear-gradient(45deg,#90C3D4,#363640) ;}
-.content1 h1{font-size:60px;}
-.content1 p{font-size:30px; font-weight: 700; color:#fef;}
-.content2 {height:90vh;width:100vw;background:linear-gradient(45deg,#90C3D4,#363640) ;}
+.content1{height:auto;background:linear-gradient(45deg,#000,#363640);padding-top: 20px;padding-bottom:80px;}
+.content1 h1{font-size:60px; text-align: center; color:#EBF2F5;}
+.content1 p{font-size:30px; font-weight: 700; color:#fef;margin:20px 20px 0px 40px;}
+.content1 summary{color: white; font-size:20px; text-align: center;}
+.content2 {height:auto;background:linear-gradient(45deg,#000,#363640);padding-top: 20px;padding-bottom:80px;}
+.content2 p{font-size:30px; font-weight: 700; color:#fef;}
 .content2 img{ width:200px; height:200px; padding:5px; }
 
-#karuzela{}
+.kolumna {
+    -webkit-column-count: 3; /* Chrome, Safari, Opera */
+    -moz-column-count: 3; /* Firefox */
+    column-count: 3;
+}
 
+.c{display: inline-block; margin-left: 20vw;margin-right: 20vw;margin-top: 100px;}/*styl czasoprzestrzeni energii i praw fizyki*/

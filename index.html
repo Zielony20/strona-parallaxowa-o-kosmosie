@@ -1,9 +1,11 @@
 <!doctype html>
 <html>
 	<head>
+		<meta charset="UTF-8">
+		<link href="style.css" rel='stylesheet' type='text/css'>
 		<link href="tytul.css" rel='stylesheet' type='text/css'>
 		<link href="paralaxa.css" rel='stylesheet' type='text/css'>
-		<link href="style.css" rel='stylesheet' type='text/css'>
+		
 		<link href='http://fonts.googleapis.com/css?family=Lato:400' rel='stylesheet' type='text/css'>
 		
 
@@ -11,7 +13,7 @@
 		
 
 	</head>
-	<body>
+	<body TOPMARGIN="0" MARGINWIDTH="0" MARGINHEIGHT="0" MARGINBORDER="0">
 	
 
 
@@ -26,7 +28,7 @@
 
 
 	</nav>
-
+	<div class=parallax>
 	<div id=kosmos_wraper>
 		
   <div id=kosmos>
@@ -39,11 +41,11 @@
    </div>
   </div>
 
-	<div class=parallax>
+	
 		
 
 		<div class=content1>
-			<img src="grafika/potw1710a.jpg" alt="zdjęcie kosmosu" height="360px" width="720px" style="float:left; margin:20px;  box-shadow: 2px 2px 10px white,-2px -2px 10px white ;">
+			
 			<h1>Na początku było słowo ...</h1>
 			<p>Wszechświat, uniwersum – wszystko, co fizycznie istnieje: cała przestrzeń, czas, prawa fizyki, stałe fizyczne oraz wszystkie formy energii i materii. Większość materii i energii znajdującej się we Wszechświecie przybiera formę ciemnej materii i ciemnej energii. Słowo „Wszechświat” może być też używane w innych kontekstach jako synonim słów „kosmos” (w rozumieniu filozofii), „świat” czy „natura”. W naukach ścisłych słowa „Wszechświat” i „kosmos” są równoważne.</p>
 			<p>Według powszechnie przyjętych teorii potwierdzonych przez różne dane obserwacyjne wiek Wszechświata wynosi 13,82 miliardów lat. Średnica widzialnego Wszechświata (przy przyjęciu pojęcia współrzędnych współporuszających się) to ok. 91–93 miliardów lat świetlnych[a] (ok. 28 miliardów parseków), czyli 8,8×1026 metrów. Nie da się określić rozmiarów całego Wszechświata – możliwe, że jest nieskończony. Obserwacje naukowe oraz rozwój teorii fizycznych doprowadziły do wnioskowania o składzie i ewolucji Wszechświata.</p>
@@ -51,9 +53,19 @@
 
 		</div>
 		<div class=lorem></div>
+		<div class=content2>
+			<p style="text-align: center;">Według naszego obecnego rozumienia Wszechświat składa się z trzech części składowych: </p>
+			<p style="text-align: center;"><span class=c>czasoprzestrzeni</span> <span class=c>form energii</span>  <span class=c>praw fizyki </span></p>
+		</div>
+		<div class=lorem></div>
+		<div class=content1></div>
+		<div class=lorem></div>
+		<div class=content1></div>
+		<div class=lorem></div>
 		<div class=content1>
+			
 			<div class="row">
-
+				<h1>Galeria Zdjęć</h1>
 			  <div class="column">
 			    <img src="grafika/1.jpg" onclick="openModal();currentSlide(1)" class="hover-shadow">
 			  </div>
@@ -73,12 +85,13 @@
 			    <div class="column">
 			    <img src="grafika/icps_ws.jpg" onclick="openModal();currentSlide(7)" class="hover-shadow">
 			  </div>
-			  </div>
 			  <details>
 			<summary>pokaż więcej</summary>
 				
 			  </details>
-</div><!--row-->
+			  </div><!--row-->
+			  
+</div>
 
 <div id="myModal" class="modal">
   <span class="close cursor" onclick="closeModal()">&times;</span>
@@ -157,6 +170,7 @@
   </div><!--model-->
 </div><!--Ligthbox-->
 
+		
 		<script>
 function openModal() {
   document.getElementById('myModal').style.display = "block";
@@ -195,6 +209,9 @@ function showSlides(n) {
   captionText.innerHTML = dots[slideIndex-1].alt;
 }
 </script>
+	
+
+
 	</div><!--Parallaxa-->
 	
 
